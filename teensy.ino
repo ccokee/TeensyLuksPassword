@@ -71,7 +71,7 @@ switch (inByte){
 
   case 'k':
     Serial.println("Reiniciando!!");
-    digitalwrite(ledPin, HIGH);
+    digitalWrite(ledPin, HIGH);
     delay(25000);  
     WRITE_RESTART(0x5FA0004);
     break;
